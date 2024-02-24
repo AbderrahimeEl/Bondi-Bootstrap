@@ -1,0 +1,85 @@
+:root {
+    --blue-dark: #19283f;
+    --main-blue: #33CEB5;
+    --red-color:  rgba(255, 0, 21, 0.589) ;
+    --yellow-color: #FFC400;
+    --white-color : #FFFFFF;
+    --number-color: #EFF7FA;
+}
+.main-btn:hover{
+    background-color: var(--red-color);
+    color: var(--white-color);
+    border:solid 1px var(--white-color) ;
+    border-radius: 10px;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    /* background-color: var(--blue-dark); */
+    height: 1000px;
+}
+
+/* start navbar */
+.navbar {
+    background-color: var(--blue-dark);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--main-blue);
+}
+
+.search .btn :hover{
+    background-color: var(--main-blue);
+}
+
+.navbar-toggler{
+    color: white;
+}
+.navbar-toggler:hover{
+    color: var(--main-blue);
+    border:solid 1px var(--main-blue);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+/* end navbar */
+/* start landing */
+.landing{
+    background-color: var(--blue-dark);
+    min-height: calc(100vh - 72px);
+}
+/* end landing */
+
+/* start features*/
+.features{
+    background-color: var(--white-color);
+    min-height: calc(100vh - 72px);
+}
+hr {
+    border: none;
+    height: 4px; 
+    background-color: var(--main-blue);
+    margin: auto;
+  }
+.feat .icons {
+    height: 200px;
+}
+.feat .icons svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feat .icons .number{
+    font-size: 200px;
+    color:var(--number-color);
+}
+.feat .icons .icon{
+    font-size: 60px;
+    color:var(--main-blue);
+}
+
+/* end features*/
